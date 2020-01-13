@@ -32,7 +32,7 @@
      @@all.detect {|artist| artist.name == name}
    end
     
-  private
+
   def print_songs
    self.songs.each{|song| puts song.name}
   end
