@@ -30,13 +30,14 @@
    
    def self.find(name)
      @@all.detect {|artist| artist.name == name}
-    end
    end
     
   private
   def print_songs
    self.songs.each{|song| puts song.name}
   end
+
+end
 
 
      
