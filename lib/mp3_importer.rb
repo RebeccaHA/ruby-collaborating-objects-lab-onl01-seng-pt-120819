@@ -8,9 +8,7 @@ class MP3Importer
   end
   
   def files
-    @files = Dir.glob("*.mp3")
-    @files.collect do |file_name|
-      files << file_name
+  Dir.glob("#{@path}/*.mp3").collect{ |file| 
     end
   end
 end
